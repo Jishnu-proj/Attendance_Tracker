@@ -1,0 +1,26 @@
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 30px 8%;
+}
+
+.stat-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.stat-value {
+    font-size: 30px;
+    font-weight: 700;
+    color: #172554;
+}

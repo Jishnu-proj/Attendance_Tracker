@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f7fb;
+  color: #1e293b;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    padding: 20px 5%;
+  }
+
+  .add-student-container,
+  .student-list-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .form-input {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 20px 5%;
+  }
+
+  .app-header h1 {
+    font-size: 21px;
+  }
+
+  .add-student-container,
+  .student-list-container {
+    padding: 18px;
+  }
+}

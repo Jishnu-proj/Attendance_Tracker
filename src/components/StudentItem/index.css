@@ -1,0 +1,103 @@
+.student-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 18px 12px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.student-item:last-child {
+    border-bottom: none;
+}
+
+.student-details {
+    flex: 1;
+}
+
+.student-name {
+    font-size: 17px;
+    margin: 0 0 6px;
+    color: #1e293b;
+}
+
+.student-id {
+    font-size: 13px;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Attendance status */
+
+.status-badge {
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status-badge.present {
+    background-color: #dcfce7;
+    color: #15803d;
+}
+
+.status-badge.absent {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Action buttons */
+
+.student-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.attendance-button {
+    padding: 9px 13px;
+    background-color: #eff6ff;
+    color: #1d4ed8;
+    border: 1px solid #bfdbfe;
+    border-radius: 7px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.attendance-button:hover {
+    background-color: #dbeafe;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+    background-color: #fee2e2;
+    color: #dc2626;
+    border: none;
+    border-radius: 7px;
+    font-size: 19px;
+}
+
+.delete-button:hover {
+    background-color: #fecaca;
+}
+
+/* Responsive layout */
+
+@media (max-width: 768px) {
+    .student-item {
+        flex-wrap: wrap;
+    }
+
+    .student-actions {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .student-actions {
+        flex-wrap: wrap;
+    }
+}
