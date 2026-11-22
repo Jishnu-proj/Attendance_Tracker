@@ -34,7 +34,7 @@ const Addstudent = (props) => {
                 value={studentId}
                 onChange={onchangeId}
             />
-            <button className="form-input" type="button" onClick={onAddStudent}>Add Student</button>
+            <button className="add-button" type="button" onClick={onAddStudent}>Add Student</button>
         </div >
     )
 }
